@@ -5,4 +5,4 @@ export default {
         const { data } = await apiHttp(api.login, params);
         return data;
     },
-}
+};
