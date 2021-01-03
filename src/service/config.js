@@ -1,15 +1,15 @@
 let url;
 switch(process.env.NODE_ENV) {
     case 'development':
-        url = 'http://119.254.13.176:8004/capsys-jlgq-test';
+        url = 'http://testcqcy.capsys.cn';
         break;
     case 'test':
-        url = 'http://119.254.13.176:8004/capsys-jlgq-test';
+        url = 'http://testcqcy.capsys.cn';
         break;
     case 'prod':
-        url = 'http://119.254.13.176:8004/capsys-jlgq-test';
+        url = 'http://testcqcy.capsys.cn';
         break;
     default: 
-        url = 'http://119.254.13.176:8004/capsys-jlgq-test';           
+        url = 'http://testcqcy.capsys.cn';           
 }
-export default url;
+export default url + '/cq-chanye';

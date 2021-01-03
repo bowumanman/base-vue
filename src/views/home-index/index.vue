@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <div class="title">我的首页</div>
-    </div>
+  <div class="about">
+    <h1>This is an about page</h1>
+  </div>
 </template>
 <script>
 export default {

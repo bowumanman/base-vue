@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+      "experimentalDecorators": true, 
+      "baseUrl": "./",
+      "paths": {
+        "@/*": ["src/*"], // 引入组件时出现智能提示
+      }
+    },
+    "exclude": ["node_modules", "dist"]
+  }

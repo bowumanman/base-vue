@@ -1,43 +1,25 @@
 module.exports = {
-  root: true,
-  env: {
-    node: true
-  },
-  'extends': [
-    'plugin:vue/essential',
-    'eslint:recommended'
-  ],
-  parserOptions: {
-    parser: 'babel-eslint'
-  },
-  rules: {
-    "no-console": 1,//禁止使用console
-    "no-alert": 2,//禁止使用alert confirm prompt
-    "no-class-assign": 2,//禁止给类赋值
-    "no-const-assign": 2,//禁止修改const声明的变量
-    "no-dupe-keys": 2,//在创建对象字面量时不允许键重复 {a:1,a:1}
-    "no-duplicate-case": 2,//switch中的case标签不能重复
-    "no-empty": 2,//块语句中的内容不能为空
-    "no-empty-character-class": 2,//正则表达式中的[]内容不能为空
-    "no-extra-semi": 2,//禁止多余的冒号
-    "key-spacing": [2, { "beforeColon": false, "afterColon": true }], // 对象字面量语法中key和value之间的空白，冒号前不要留空格，冒号后面需留一个空格
-    "no-func-assign": 2,//禁止重复的函数声明
-    "no-irregular-whitespace": 2,//不能有不规则的空格
-    "no-labels": 2,//禁止标签声明
-    "no-multi-spaces": 1,//不能用多余的空格
-    "no-multiple-empty-lines": [1, {"max": 2}],//空行最多不能超过2行
-    "no-redeclare": 2,//禁止重复声明变量
-    "no-regex-spaces": 2,//禁止在正则表达式字面量中使用多个空格 /foo bar/
-    "no-use-before-define": 2,//未定义前不能使用
-    "no-var": 0,//禁用var，用let和const代替
-    "comma-spacing": 2,//逗号前后的空格
-    "semi-spacing": [0, {"before": false, "after": true}],//分号前后空格
-    "semi": [2, "always"], // 默认配置always，要求在行末加上分号
-    "space-unary-ops": [0, { "words": true, "nonwords": false }],//一元运算符的前/后要不要加空格
-    "use-isnan": 2,//禁止比较时使用NaN，只能用isNaN()
-    "quotes": [2, "single", "avoid-escape"], // 双引号、单引号、反义符（ECMAScript2015）。规定了字符串定义的方式
-    "array-bracket-spacing": [0, "never"], // 数组前后是否加空格
-    "block-spacing": [2, "always"], //
-    "space-infix-ops": [2, {"int32Hint": true}], //操作符周围的空格
-  }
+    root: true,
+    env: {
+        node: true
+    },
+    'extends': [
+        'plugin:vue/essential',
+        'eslint:recommended'
+    ],
+    parserOptions: {
+        parser: 'babel-eslint'
+    },
+    rules: {
+        "no-console": 1, //不允许出现console语句
+        "no-dupe-args": 2, //函数定义的时候不允许出现重复的参数
+        "no-dupe-keys": 2, //对象中不允许出现重复的键
+        "no-duplicate-case": 2, //switch语句中不允许出现重复的case标签
+        "no-empty": 1, //不允许出现空的代码块
+        "no-redeclare": 2, //不允许变量重复声明
+        "no-var": 0, //使用let和const代替var
+        "no-multiple-empty-lines": [2, {"max": 2}], //空行最多不能超过两行
+        "space-before-function-paren": [1, {"anonymous": "always", "named": "never"}], //函数定义时括号前的空格
+        "space-unary-ops": [2, { "words": true, "nonwords": false}], //一元运算符前后不要加空格
+    }
 }

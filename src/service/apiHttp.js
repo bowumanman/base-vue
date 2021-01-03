@@ -30,6 +30,6 @@ export const apiHttp = async (methodApi, queryData, urlParam) => {
         option.params = Object.assign({}, query);
     }
     const res = await axios(option);
-    return res.data;
+    return res;
 };
 export default apiHttp;
